@@ -1,0 +1,96 @@
+{
+  "name": "@macrof/shared",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "description": "React MicroFrontend Shared, Typescript, Webpack 5, ModuleFederation",
+  "author": "FreshTouch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreshTouch/macrof-shared.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FreshTouch/macrof-shared/issues"
+  },
+  "homepage": "https://github.com/FreshTouch/macrof-shared",
+  "keywords": [
+    "typescript",
+    "react",
+    "webpack 5",
+    "webpack",
+    "microfrontend",
+    "microfrontends",
+    "micro frontend",
+    "modulefederation",
+    "module federation",
+    "craco",
+    "js",
+    "ioc",
+    "mobx",
+    "di",
+    "dependency injection",
+    "inversify",
+    "react context",
+    "axios",
+    "stores",
+    "http",
+    "singleton",
+    "mobx-react"
+  ],
+  "scripts": {
+    "build": "tsc && yarn build:cjs",
+    "start": "tsc -w",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "lint:ts": "eslint --ext tsx --ext .ts src",
+    "lint-fix:ts": "eslint --ext tsx --ext .ts src --fix",
+    "test": "jest test",
+    "preversion": "git rev-parse --abbrev-ref HEAD",
+    "postversion": "git push origin HEAD && git push origin HEAD --follow-tags"
+  },
+  "files": [
+    "/lib"
+  ],
+  "dependencies": {
+    "axios": "1.2.4",
+    "fp-ts": "2.13.1",
+    "history": "5.3.0",
+    "inversify": "6.0.1",
+    "io-ts": "2.2.20",
+    "io-ts-reporters": "2.0.1",
+    "lodash": "4.17.21",
+    "mobx": "5.15.4",
+    "mobx-react": "6.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.7.0",
+    "reflect-metadata": "0.1.13"
+  },
+  "devDependencies": {
+    "@macrof/tool-kit": "^0.0.1",
+    "@types/history": "5.0.0",
+    "@types/lodash": "4.14.191",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "@types/react-router-dom": "5.3.3",
+    "@types/jest": "29.4.0",
+    "i18next": "22.4.9",
+    "i18next-browser-languagedetector": "7.0.1",
+    "react-i18next": "12.1.4",
+    "typescript": "4.9.4",
+    "@testing-library/react": "13.4.0",
+    "@testing-library/react-hooks": "8.0.1",
+    "@emotion/jest": "11.10.5",
+    "babel-jest": "29.4.1",
+    "babel-loader": "9.1.2",
+    "react-test-renderer": "18.2.0",
+    "ts-jest": "27.1.5",
+    "jest": "27.5.1"
+  },
+  "peerDependencies": {
+    "i18next": "22.4.9",
+    "i18next-browser-languagedetector": "7.0.1",
+    "react-i18next": "12.1.4"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}

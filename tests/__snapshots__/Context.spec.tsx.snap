@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Context Provider AppProvider should render successfully 1`] = `
+<body>
+  <div>
+    <div>
+      Test
+    </div>
+  </div>
+</body>
+`;

@@ -1,0 +1,20 @@
+{
+  "*.{ts,tsx,js,jsx}": [
+    "eslint --config ./.eslintrc.precommit.js --fix --max-warnings=0 --rule '{ \"prettier/prettier\": \"error\" }'"
+  ],
+  "*.md": [
+    "prettier --write --parser=markdown"
+  ],
+  "*.json": [
+    "prettier --write --parser=json"
+  ],
+  "*.scss": [
+    "prettier --write --parser=scss"
+  ],
+  "*.css": [
+    "prettier --write --parser=css"
+  ],
+  "*.less": [
+    "prettier --write --parser=less"
+  ],
+}

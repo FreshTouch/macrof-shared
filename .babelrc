@@ -1,0 +1,3 @@
+{
+  "extends": "@macrof/tool-kit/babelrc"
+}

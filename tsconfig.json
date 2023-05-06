@@ -1,0 +1,10 @@
+{
+  "extends": "@macrof/tool-kit/tsconfig/packages",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "lib"
+  },
+  "types": ["node", "jest", "reflect-metadata"],
+  "include": ["src", "tests/**/*.spec.ts", "tests/**/*.spec.tsx"],
+  "exclude": ["node_modules"]
+}
